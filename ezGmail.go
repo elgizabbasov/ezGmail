@@ -138,6 +138,7 @@ func (gs *GmailService) InitSrv() {
 	// Assign Defaults
 	gs.iMaxResults = 50
 	gs.sUser       = "me"
+	gs.sLabel      = "UNREAD"
 }
 
 func (gs *GmailService) MaxResults	(maxres         int64 ) *GmailService	{ gs.iMaxResults	= maxres    ; return gs }
